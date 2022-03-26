@@ -16,7 +16,7 @@ class Animal extends Propietario {
         this._tipo = tipo
     }
 
-    get gettipo() {
+    get tipo() {
         return `El tipo de animal es un: ${this._tipo}`;
     }
 
@@ -81,7 +81,7 @@ let mostrar = (e) => {
     const nombreMascota = dataMascota.nombreMascota;
     const tipo = dataMascota.tipo;
     const enfermedad = dataMascota.enfermedad;
-    document.getElementById('lista').innerHTML = `<li>${dataMascota.datosPropietario()}</li><li>${dataMascota.gettipo}, mientras que el nombre de la mascota es ${nombreMascota} y la enfermedad es ${enfermedad}</li>`;
+    document.getElementById('lista').innerHTML = `<li>${dataMascota.datosPropietario()}</li><li>${dataMascota.tipo}, mientras que el nombre de la mascota es ${nombreMascota} y la enfermedad es ${enfermedad}</li>`;
 
 }
 
