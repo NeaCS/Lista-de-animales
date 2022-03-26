@@ -53,7 +53,7 @@ let boton = document.getElementById("boton");
 
 
 let registro = () => {
-    
+
     let nombre = document.getElementById("propietario").value;
     let direccion = document.getElementById("direccion").value;
     let telefono = document.getElementById("telefono").value;
@@ -75,14 +75,14 @@ let registro = () => {
 
 
 
- let mostrar = (e) => {
-     e.preventDefault()
+let mostrar = (e) => {
+    e.preventDefault()
     const dataMascota = registro()
     const nombreMascota = dataMascota.nombreMascota;
     const tipo = dataMascota.tipo;
     const enfermedad = dataMascota.enfermedad;
     document.getElementById('lista').innerHTML = `<li>${dataMascota.datosPropietario()}</li><li>${dataMascota.gettipo}, mientras que el nombre de la mascota es ${nombreMascota} y la enfermedad es ${enfermedad}</li>`;
-    
+
 }
 
 
